@@ -71,6 +71,16 @@ function mostrarDetalles(pelicula) {
     document.getElementById('modalBody').innerHTML = `
         <p><strong>Resumen:</strong> ${pelicula.overview}</p>
         <p><strong>Géneros:</strong> ${pelicula.genres.join(', ')}</p>
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Detalles adicionales 
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#"><strong>Año de lanzamiento:</strong> ${pelicula.release_date.split('-')[0]}</a></li>
+        <li><a class="dropdown-item" href="#"><strong>Duracion:</strong> ${pelicula.runtime} minutos</a></li>
+        <li><a class="dropdown-item" href="#"><strong>Presupuesto:</strong> ${pelicula.budget}</a></li>
+        <li><a class="dropdown-item" href="#"><strong>Ganancias:</strong> ${pelicula.revenue}</a></li>
+        </div>
+        </div>
     `;
     $('#detallesModal').modal('show'); // Abre el modal
 }
