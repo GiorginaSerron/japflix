@@ -26,3 +26,43 @@ main {
 .offcanvas-top{
     height: fit-content;
 }
+
+#peliculaInfo {
+    display: block; /* Asegúrate de que esté visible */
+    margin-top: 20px; /* Para un mejor espaciado */
+}
+
+.card {
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+    margin-bottom: 15px; /* Espaciado entre tarjetas */
+}
+
+.card {
+    margin: 15px 0; /* Espaciado vertical entre tarjetas */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Tamaño de fuente para el título */
+    margin-bottom: 0.5rem; /* Espaciado inferior */
+}
+
+.card-text {
+    margin-bottom: 1rem; /* Espaciado inferior para el texto */
+}
+
+.d-flex {
+    margin-top: auto; /* Para empujar las estrellas hacia abajo */
+}
+
+#lista {
+    padding: 0; 
+    list-style: none;
+}
+
+#peliculaInfo {
+    border: 1px solid red; 
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    display:block;
+}
